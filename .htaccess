@@ -1,0 +1,8 @@
+RewriteEngine on
+ErrorDocument 404 /404.php
+
+RewriteCond %{HTTP_REFERER} !^http://portfolio.test/.*$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+
+

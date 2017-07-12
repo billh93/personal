@@ -1,0 +1,207 @@
+/******** Global *******/
+
+html {
+	cursor: url("http://downloads.totallyfreecursors.com/cursor_files/ironman-ani.ani"), 
+	url("http://downloads.totallyfreecursors.com/thumbnails/ironman-ani.gif"), auto;
+}
+
+
+/******** Smartphone *******/
+
+/* Typography
+================================= */
+.center-text{
+    text-align: center;
+}
+.white-text{
+    color: white;
+}
+.no-bullets{
+    list-style-type: none;
+}
+.filled-star{
+    color: #eb6864;
+}
+/* Images
+================================= */
+#me{
+    width: 30%;
+    margin-top: 30px;
+    opacity: 0.92;
+}
+.gallery-item {
+    height: auto;
+    width: 100%;
+    margin-bottom: 2em;
+    position: relative;
+    text-align: center;
+}
+.gallery-item:first-child {
+    margin-right: 2.762430939%;
+}
+.gallery-item img {
+    width: 40%;
+    border: 3px solid gray;
+}
+.gallery-item .img-title:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.img-title {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    height: 100%;
+    width: 40%;
+    opacity: 0.9;
+    display: none; /* comment this out for CSS hover */
+    background-color: #222222;
+    /*transition: all 0.5s ease;*/
+    border-radius: 50%;
+}
+.img-title h5 {
+    position: absolute;
+    color: #fff;
+    top: 33%;
+    width: 100%;
+    text-align: center;
+}
+/* Links
+================================= */
+.active{
+    color: #e22620;
+}
+
+.boxes{
+    border-bottom: 1px solid white;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+.boxes a{
+    color: white;
+    font-weight: bold;
+}
+.boxes:hover, .boxes:hover a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+/* Layout
+================================= */
+body{
+    background: #f1f1f1;
+}
+
+.main-container{
+    background: white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+.outline{
+    border: 1px solid black;
+}
+.main-nav{
+    border-radius: 0;
+    z-index: 150;
+    position: relative;
+}
+.main-nav-scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+#intro-row{
+    background-image: url("../img/jarvis.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.talent-row:hover{
+    background-color: #F0F0F0;
+
+}
+
+.talent-title{
+    display: inline-block;
+    width: 60%;
+}
+.talent-score{
+    float: right;
+}
+
+.g-recaptcha{
+    margin: 0 auto 20px auto;
+    display: inline-block;
+}
+
+/* Buttons
+================================= */
+.carousel-control.right{
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.01)));
+}
+.carousel-control.left{
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.01)));
+}
+/* Logos & Icons
+================================= */
+.social-icons{
+    margin: 0 10px 20px 10px;
+    color: ghostwhite;
+}
+/* Media Queries
+================================= */
+
+/* Tablet */
+@media only screen and (min-width: 481px) {
+    /* Images
+    ================================= */
+    #me{
+        width: 35%;
+        margin: 30px auto 0 auto;
+    }
+    /* Layout
+    ================================= */
+    form{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+    /* Images
+    ================================= */
+    #me{
+        width: 22%;
+    }
+    .gallery-item img {
+        width: 80%;
+        border: 6px solid gray;
+    }
+    .img-title {
+        top: 0;
+        left: 10%;
+        width: 80%;
+    }
+
+    /* Links
+    ================================= */
+    .boxes{
+        border-bottom: none;
+        width: 16%;
+        margin: 0 0 0 0;
+    }
+    .boxes:hover, .boxes:hover a{
+        background-color: #333333;
+        color: black;
+    }
+
+    /* Layout
+    ================================= */
+    form{
+        width: 60%;
+    }
+}
